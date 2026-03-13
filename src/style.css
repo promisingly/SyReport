@@ -1,0 +1,36 @@
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f5f7fa;
+  color: #303133;
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-root,
+  .print-root * {
+    visibility: visible;
+  }
+
+  .print-root {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+  }
+}
